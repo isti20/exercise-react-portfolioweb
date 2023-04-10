@@ -141,10 +141,10 @@ header.active{
 }
 
 .home img {
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
-  height: 90vh;
+  height: 91.7vh;
   width: 100%;
   object-fit: contain;
   transform: scale(1.1);
@@ -255,4 +255,35 @@ button {
 p {
   color: #6185a5;
   line-height: 30px;
+}
+
+/* -------branding------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.branding {
+  background-color: #08071c;
+  color: #fff;
+  margin-top: 35px;
+  padding: 80px 0;
+}
+
+.branding h1 {
+  font-size: 40px;
+  color: #38d16a;
+  margin-right: 20px;
+}
+
+.branding h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 10px 0 20px 0;
+}
+
+.branding p {
+  color: #fff;
+  opacity: 0.7;
 }
