@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Rubik', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  max-width: 80%;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* -------header------- */
+header {
+  padding: 20px 0;
+}
+
+header ul {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header ul li a {
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #38d16a;
+  font-weight: 500;
+}
+
+.headerIcon {
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.navbar-items-icon {
+  color: #000;
+  display: none;
+}
+
+header.active{
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 28px 0 rgba(0 0 0 /6%);
+  width: 100%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  header .icon {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    display: none;
   }
+
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    left: 50px;
+    top: 75px;
+    transition: 0.5s;
+    width: 100%;
+    height: 30vh;
+    z-index: 5;
+  }
+
+  .nav-links-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  header ul li {
+    margin-bottom: 30px;
+  }
+
+  .navbar-items-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px 10px;
+  }
+}
+
+/* ---------home--------- */
+.left,
+.right {
+  width: 50%;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.topMargin {
+  margin-top: 80px;
+}
+
+.home {
+  height: 90vh;
+}
+
+.home .img {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.home img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100%;
+  object-fit: contain;
+  transform: scale(1.1);
+}
+
+.socialIcon i {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.socialIcon i:hover {
+  color: #fff;
+}
+
+.facebook {
+  color: #4267b2;
+  border: 1px solid #4267b2;
+}
+
+.facebook:hover {
+  background-color: #4267b2;
+}
+
+.instagram {
+  color: #dc2743;
+  border: 1px solid #dc2743;
+}
+
+.instagram:hover {
+  background-color: #dc2743;
+}
+
+.twitter {
+  color: #38a1f3;
+  border: 1px solid #38a1f3;
+}
+
+.twitter:hover {
+  background-color: #38a1f3;
+}
+
+.youtube {
+  color: #e92525;
+  border: 1px solid #e92525;
+}
+
+.youtube:hover {
+  background-color: #e92525;
+}
+
+.pinterest {
+  color: #c8232c;
+  border: 1px solid #c8232c;
+}
+
+.pinterest:hover {
+  background-color: #c8232c;
+}
+
+.dribbble {
+  color: #ee72a2;
+  border: 1px solid #ee72a2;
+}
+
+.dribbble:hover {
+  background-color: #ee72a2;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  background: #38d16a;
+}
+
+.primary-btn:hover {
+  background: #f54ea2;
+  box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
+}
+
+.home .right {
+  margin-top: 15%;
+}
+
+.home .socialIcon {
+  margin: 30px 0;
+}
+
+.home p {
+  margin-bottom: 20px;
+}
+
+p {
+  color: #6185a5;
+  line-height: 30px;
 }
