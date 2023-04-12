@@ -141,15 +141,18 @@ header.active{
 }
 
 .home img {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 91.7vh;
+  height: 90vh;
   width: 100%;
   object-fit: contain;
   transform: scale(1.1);
 }
 
+.home h1 {
+  font-size: 60px;
+}
 .socialIcon i {
   width: 35px;
   height: 35px;
@@ -334,3 +337,35 @@ h3 {
   z-index: -1;
 }
 
+/* -------services------- */
+.services {
+  text-align: center;
+  background-color: #f8f9fe;
+  padding: 50px 0;
+}
+
+.services .box {
+  text-align: left;
+}
+
+.services img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.services .text {
+  background-color: #fff;
+  box-shadow: 0 5px 20px 0 rgba(0 0 0 /6%);
+  padding: 30px;
+  margin: 20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+.services .text h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 20px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "../home/homes/Home";
-import Branding from "../home/homes/Branding";
+import Branding from "../home/Branding";
 import About from "../home/about/About";
 import Service from "../home/servicess/Service";
 
