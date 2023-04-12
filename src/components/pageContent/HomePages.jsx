@@ -4,6 +4,7 @@ import Branding from "../home/Branding";
 import About from "../home/about/About";
 import Service from "../home/servicess/Service";
 import Wrapper from "../home/Wrapper";
+import Skill from "../home/Skill";
 
 const HomePages = () => {
     return (
@@ -13,6 +14,7 @@ const HomePages = () => {
             <About />
             <Service />
             <Wrapper />
+            <Skill />
         </>
     )
 }
