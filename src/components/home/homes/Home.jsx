@@ -1,17 +1,17 @@
 import React from "react";
-import people from '../../../assets/people.png';
+// import people from '../../../assets/people.png';
 
 const Home = () => {
     return (
         <>
             <section className="home">
                 <div className="container flex">
-                    <div className="left">
+                    {/* <div className="left">
                         <div className="img">
                             <img src={people} alt="" />
                         </div>
-                    </div>
-                    <div className="right topMargin">
+                    </div> */}
+                    <div className="topMarign">
                         <h1>I am a web designer</h1>
                         <div className="socialIcon">
                             <i className="fab fa-facebook-f facebook"></i>

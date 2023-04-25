@@ -4,14 +4,14 @@ import ServicesData from "./ServiceData";
 const Service = () => {
     return (
         <div>
-            <section className="services topMargin">
+            <section className="services topMarign">
                 <div className="container">
                     <div className="heading">
                         <h3>My Services</h3>
                         <h1>Interactive Services Offered Me</h1>
                     </div>
 
-                    <div className="contain grid topMargin">
+                    <div className="contain grid topMarign">
                         {
                             ServicesData.map((val) => {
                                 return (

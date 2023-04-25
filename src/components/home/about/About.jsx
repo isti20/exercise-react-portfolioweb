@@ -13,7 +13,7 @@ const About = () => {
     ]
     return (
         <>
-            <section className="about topMargin">
+            <section className="about topMarign">
                 <div className="container flex">
                     {
                         data.map((val) => {
